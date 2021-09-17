@@ -43,6 +43,21 @@ p {
   #index-banner .section {
     top: 0;
   }
+
+  .nav-wrapper{
+    padding-left: 1px !important;
+  }
+
+  .brand-logo {
+    font-size: 2rem !important;
+  }
+}
+
+@media only screen and (max-width : 330px) {
+  
+  .brand-logo {
+    font-size: 1.5rem !important;
+  }
 }
 
 .icon-block {
@@ -63,3 +78,14 @@ footer.page-footer {
   padding-left: 10%;
   padding-right: 10%;
 } 
+
+.nav-wrapper{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media only screen and (min-width: 993px){
+.container {
+    width: 80% !important; 
+}
+}
