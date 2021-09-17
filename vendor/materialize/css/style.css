@@ -89,3 +89,10 @@ footer.page-footer {
     width: 80% !important; 
 }
 }
+
+.product-img{
+  height: 100%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+}
