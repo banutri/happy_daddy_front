@@ -6,11 +6,17 @@
   <title>Happy Daddy Lingerie</title>
 
   <!-- CSS  -->
+  
   <link href="/vendor/materialize/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="/vendor/materialize/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   
   <!-- Icon -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="/vendor/fontawesome-free/css/all.min.css">
+
+  <!-- Notification -->
+  <link rel="stylesheet" href="/vendor/notification/css/notification.css">
+
   
 </head>
 <body>
@@ -21,13 +27,26 @@
       
       <ul class="right hide-on-med-and-down">
         
-        <li><a href="#" class="waves-effect waves-teal btn-flat btn-navbar-round"> <i class=" material-icons">search</i> </a></li>
-        <li><a href="#" class="waves-effect waves-teal btn-flat btn-navbar-round"> <i class=" material-icons">account_circle</i> </a></li>
+        <li><a href="#" class="waves-effect waves-light btn-flat btn-navbar-round"><i class="material-icons">search</i> </a></li>
+        <li>
+          <a href="#" class="waves-effect waves-light btn-flat btn-navbar-round">
+            <i class="material-icons">shopping_cart</i>
+          </a>
+        </li>
+        <span class="notification-count">10</span>
+        <li><a href="#" class="waves-effect waves-light btn-flat btn-navbar-round"><i class="material-icons">account_circle</i> </a></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
-        <li><a href="#" class="waves-effect waves-teal btn-flat "><i class=" material-icons">search</i> Cari</a></li>
-        <li><a href="#" class="waves-effect waves-teal btn-flat "><i class=" material-icons">account_circle</i> Login</a></li>
+        <li><a href="#" class="waves-effect waves-light btn-flat "><i class=" material-icons">search</i> Cari</a></li>
+        <li>
+          <a href="#" class="waves-effect waves-light btn-flat">
+            <i class="material-icons">shopping_cart</i>
+            Keranjang
+            <span class="new badge red" data-badge-caption="">10</span>
+          </a>
+        </li>
+        <li><a href="#" class="waves-effect waves-light btn-flat "><i class=" material-icons">account_circle</i> Login</a></li>
         
       </ul>
       
@@ -196,20 +215,12 @@
   
   <footer class="page-footer teal">
     <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Happy Daddy</h5>
-          <p class="grey-text text-lighten-4">Menyediakan kebutuhan untuk ayah, supaya ayah senang.</p>
-
-
-        </div>
-        
+      <div class="row">        
         <div class="col l3 s12">
           <h5 class="white-text">Kontak</h5>
           <ul>
             <li><a class="white-text" href="#!">Whatsapp</a></li>
             <li><a class="white-text" href="#!">Instagram</a></li>
-            <li><a class="white-text" href="#!">Facebook</a></li>
           </ul>
         </div>
       </div>
@@ -226,6 +237,9 @@
   <script src="vendor/jquery/jquery-3.6.0.min.js"></script>
   <script src="/vendor/materialize/js/materialize.js"></script>
   <script src="/vendor/materialize/js/init.js"></script>
+
+  <!-- Notification -->
+  <script src="/vendor/notification/js/notification.js"></script>
 
   </body>
 </html>

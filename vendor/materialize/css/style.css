@@ -96,3 +96,18 @@ footer.page-footer {
 	background-size: contain;
 	background-position: center center;
 }
+
+.notification-count
+{
+  text-decoration: solid;
+  text-align: center;
+  font-size: 8px;
+  position: relative;
+  background-color: #F44336 !important;
+  bottom:10px;
+  left: -65px;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: default;
+  z-index: 999999;
+}
