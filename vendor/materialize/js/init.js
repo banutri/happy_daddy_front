@@ -3,6 +3,10 @@
 
     $('.sidenav').sidenav();
     
+    $('.modal').modal({
+      dismissible:false,
+    });
+
 
     $('.carousel.carousel-slider').carousel({
       indicators:true,

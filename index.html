@@ -4,7 +4,13 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Happy Daddy Lingerie</title>
+  <title>Happy Daddy | Home</title>
+  <link rel="shortcut icon" type="image/png" href="/assets/img/logo/favicon.png"/>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
 
   <!-- CSS  -->
 
@@ -21,38 +27,40 @@
 
 </head>
 
-<body>
+<body class="grey lighten-3">
 
   <div class="navbar-fixed">
-    <nav class="white " role="navigation">
+    <nav class="yellow accent-3" role="navigation">
       <div class="nav-wrapper ">
 
-        <a id="logo-container" href="#" class="brand-logo">Happy Daddy</a>
+        <a id="logo-container" href="/" class="brand-logo black-text" style="font-family: 'Satisfy', cursive; ">
+          Happy Daddy
+        </a>
 
         <ul class="right hide-on-med-and-down">
 
-          <li><a href="#" class="waves-effect waves-light btn-flat btn-navbar-round"><i
+          <li><a href="#modalSearch" class="waves-effect waves-light btn-flat btn-navbar-round black-text modal-trigger"><i
                 class="material-icons">search</i> </a></li>
           <li>
-            <a href="#" class="waves-effect waves-light btn-flat btn-navbar-round">
+            <a href="#" class="waves-effect waves-light btn-flat btn-navbar-round black-text">
               <i class="material-icons">shopping_cart</i>
             </a>
           </li>
           <span class="notification-count">10</span>
-          <li><a href="#" class="waves-effect waves-light btn-flat btn-navbar-round"><i
+          <li><a href="#" class="waves-effect waves-light btn-flat btn-navbar-round black-text"><i
                 class="material-icons">account_circle</i> </a></li>
         </ul>
 
 
 
-        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger black-text"><i class="material-icons">menu</i></a>
       </div>
     </nav>
 
   </div>
 
   <ul id="nav-mobile" class="sidenav">
-    <li><a href="#" class="waves-effect waves-light btn-flat "><i class=" material-icons">search</i> Cari</a></li>
+    <li><a href="#modalSearch" class="waves-effect waves-light btn-flat modal-trigger"><i class=" material-icons">search</i> Cari</a></li>
     <li>
       <a href="#" class="waves-effect waves-light btn-flat">
         <i class="material-icons">shopping_cart</i>
@@ -68,8 +76,8 @@
 
 
 
-  <div class="section">
-    <div class="container">
+  <div class="section ">
+    <div class="container z-depth-1">
       <div class="carousel carousel-slider">
         <a class="carousel-item" href="#one!"><img src="/assets/img/background1.jpg"></a>
         <a class="carousel-item" href="#one!"><img src="/assets/img/background2.jpg"></a>
@@ -95,8 +103,31 @@
                 <div class="product-img product-click" style="background-image: url('/assets/catalogues/hijab1.jpeg');">
                 </div>
               </div>
-              <a class="btn-floating halfway-fab waves-effect waves-light red cart-btn"><i
-                  class="material-icons">add_shopping_cart</i></a>
+              <a class="btn-floating halfway-fab waves-effect waves-light yellow accent-3"><i
+                  class="material-icons black-text">add_shopping_cart</i></a>
+            </div>
+
+            <div class="card-content product-click">
+              <h6 class="truncate" style="padding-top: 3px; padding-bottom: 3px; font-size: 20px;">Hijab Rainbows Six
+                Colors Hilih Khintil</h6>
+              <div>
+                <span class="green-text">Stok Tersedia</span>
+              </div>
+              <span style="font-size: 16px; text-decoration: line-through;">Rp20,000</span>
+              <span style="font-size: 16px; ">Rp10,000</span>
+            </div>
+
+          </div>
+        </div>
+        <div class="col s12 m6 l4"  style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;">
+          <div class="card hoverable">
+            <div class="card-image">
+              <div style="height: 200px;" class="grey lighten-5">
+                <div class="product-img product-click" style="background-image: url('/assets/catalogues/hijab1.jpeg');">
+                </div>
+              </div>
+              <a class="btn-floating halfway-fab waves-effect waves-light yellow accent-3"><i
+                  class="material-icons black-text">add_shopping_cart</i></a>
             </div>
 
             <div class="card-content product-click">
@@ -119,26 +150,45 @@
   </div>
 
 
+  <!-- Footer -->
 
-  <footer class="page-footer teal">
+  <footer class="page-footer yellow accent-3 black-text">
     <div class="container">
       <div class="row">
         <div class="col l3 s12">
-          <h5 class="white-text">Kontak</h5>
+          <h5>Kontak</h5>
           <ul>
-            <li><a class="white-text" href="#!">Whatsapp</a></li>
-            <li><a class="white-text" href="#!">Instagram</a></li>
+            <li><a class="black-text" href="#!">Whatsapp</a></li>
+            <li><a class="black-text" href="#!">Instagram</a></li>
           </ul>
         </div>
       </div>
     </div>
-    <div class="footer-copyright">
+    <div class="footer-copyright yellow accent-4 black-text">
       <div class="container">
         Happy Daddy &copy; 2021
       </div>
     </div>
   </footer>
 
+  <!-- Modals -->
+  <!-- Modal Structure -->
+  <div id="modalSearch" class="modal">
+    <div style="padding: 10px; font-size: 1.5rem;" class="yellow accent-3 black-text z-depth-1"> 
+      Cari Barang
+      <a href="#" class="black-text modal-close" style="float: right;"><i class="material-icons">close</i></a>
+    </div>
+    <div class="modal-content" style="padding: 10px !important;">
+      <form action="">
+        <div class="input-field ">
+          <i class="material-icons prefix">search</i>
+          <input id="icon_prefix" type="text" class="validate" placeholder="Obat kuat...">
+          
+        </div>
+      </form>
+    </div>
+    
+  </div>
 
   <!--  Scripts-->
   <script src="vendor/jquery/jquery-3.6.0.min.js"></script>
