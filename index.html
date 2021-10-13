@@ -30,6 +30,12 @@
 <body class="grey lighten-3">
 
   <div class="navbar-fixed">
+    <ul id="accDropDown" class="dropdown-content">
+      <li><a href="#!">one</a></li>
+      <li><a href="#!">two</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">three</a></li>
+    </ul>
     <nav class="yellow accent-3" role="navigation">
       <div class="nav-wrapper ">
 
@@ -37,12 +43,7 @@
           Happy Daddy
         </a>
 
-        <ul id="accDropDown" class="dropdown-content">
-          <li><a href="#!">one</a></li>
-          <li><a href="#!">two</a></li>
-          <li class="divider"></li>
-          <li><a href="#!">three</a></li>
-        </ul>
+        
 
         <ul class="right hide-on-med-and-down">
 
@@ -50,19 +51,20 @@
               class="waves-effect waves-light btn-flat btn-navbar-round black-text modal-trigger"><i
                 class="material-icons">search</i> </a></li>
           <li>
-            <a href="#" class="waves-effect waves-light btn-flat btn-navbar-round black-text">
-              <i class="material-icons">shopping_cart</i>
-              <span class="notification-count">10</span>
+            <a href="#" class=" btn-flat btn-navbar-round" >
+              <i class="material-icons black-text">shopping_cart</i>
+              <span class="notification-count white-text">10</span>
             </a>
           </li>
           
-          <li>
-            <a href="#" class="waves-effect waves-light dropdown-trigger" data-target="accDropDown">
-            <div style="width: 100px;" class="yellow accent-4">
-                <i class="material-icons">account_circle</i>
-              </div>
-            </a>
-          </li>
+          
+          
+          <li class="yellow accent-4" style="margin-left: 20px;">
+            <a href="#" class="waves-effect waves-light dropdown-trigger" style="padding-left: 5px; min-width: 120px; max-width: 140px; margin-top: -5px;" data-target="accDropDown">
+               <i class="material-icons left">account_circle</i><span class="truncate">banutriyantoko</span>
+              </a>
+            </li>
+          
         </ul>
 
 
