@@ -1,1 +1,2 @@
-# Happy Daddy is a Lingerie Online Store
+# Happy Daddy is a Daddy's Online Store
+This is front-end development
