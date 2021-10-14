@@ -17,6 +17,10 @@ $(document).ready(function () {
     let searchQuery = $('input[name=searchQuery]').val();
     console.log(searchQuery);
   })
+
+  $('.btn-submit-searchquery').on('click',function(){
+    $('#searchBarForm').submit();
+  })
 // End search bar
 
 // Carousel
@@ -49,6 +53,11 @@ $(document).ready(function () {
   });
 // End Product click
 
+// Sidenav Trigger
+  $('.sidenav-trigger-custom').on('click',function(){
+    $('.sidenav').sidenav('open');
+  });
+// End Sidenav Trigger
 
 
 
@@ -56,6 +65,9 @@ $(document).ready(function () {
 
 // Sidenavabr
 $('.sidenav').sidenav();
+
+
+
 
 
 // Dropdown

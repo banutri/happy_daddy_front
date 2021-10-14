@@ -30,12 +30,7 @@
 <body class="grey lighten-3">
 
   <div class="navbar-fixed">
-    <ul id="accDropDown" class="dropdown-content">
-      <li><a href="#!">one</a></li>
-      <li><a href="#!">two</a></li>
-      <li class="divider"></li>
-      <li><a href="#!">three</a></li>
-    </ul>
+    
     <nav class="yellow accent-3" role="navigation">
       <div class="nav-wrapper ">
 
@@ -47,50 +42,61 @@
 
         <ul class="right hide-on-med-and-down">
 
-          <li><a href="#modalSearch"
-              class="waves-effect waves-light btn-flat btn-navbar-round black-text modal-trigger"><i
-                class="material-icons">search</i> </a></li>
+          <li>
+            <a href="#modalSearch" class="waves-effect waves-light btn-flat btn-navbar-round black-text modal-trigger">
+              <i class="material-icons">search</i>
+            </a>
+          </li>
           <li>
             <a href="#" class=" btn-flat btn-navbar-round" >
               <i class="material-icons black-text">shopping_cart</i>
               <span class="notification-count white-text">10</span>
             </a>
           </li>
-          
-          
-          
-          <li class="yellow accent-4" style="margin-left: 20px;">
-            <a href="#" class="waves-effect waves-light dropdown-trigger" style="padding-left: 5px; min-width: 120px; max-width: 140px; margin-top: -5px;" data-target="accDropDown">
-               <i class="material-icons left">account_circle</i><span class="truncate">banutriyantoko</span>
+          <li>
+            <a href="#" class="waves-effect waves-light btn-flat btn-navbar-round black-text sidenav-trigger-custom">
+               <i class="material-icons">perm_identity</i>
               </a>
             </li>
           
         </ul>
 
+        <ul class="right hide-on-large-only">
+          <li>
+            <a href="#modalSearch" class="waves-effect waves-light btn-flat btn-navbar-round black-text modal-trigger">
+              <i class="material-icons">search</i>
+            </a>
+          </li>
+        </ul>
 
 
-        <a href="#" data-target="nav-mobile" class="sidenav-trigger black-text"><i class="material-icons">menu</i></a>
+
+        <a href="#" data-target="nav-mobile" class=" sidenav-trigger-custom black-text hide-on-large-only" style="margin:0 18px; float:left;"><i class="material-icons">perm_identity</i></a>
       </div>
     </nav>
 
   </div>
 
-  <ul id="nav-mobile" class="sidenav">
-    <li><a href="#modalSearch" class="waves-effect waves-light btn-flat modal-trigger"><i
-          class=" material-icons">search</i> Cari</a></li>
-    <li>
-      <a href="#" class="waves-effect waves-light btn-flat">
-        <i class="material-icons">shopping_cart</i>
-        Keranjang
-        <span class="new badge red" data-badge-caption="">10</span>
-      </a>
-    </li>
-    <li><a href="#" class="waves-effect waves-light btn-flat "><i class=" material-icons">account_circle</i> Login</a>
-    </li>
+  
 
+  <ul id="slide-out" class="sidenav">
+    <li><div class="user-view">
+      <div class="background yellow accent-4">
+        <!-- <img src="https://materializecss.com/images/office.jpg"> -->
+      </div>
+      <img class="circle" src="https://materializecss.com/images/yuna.jpg">
+      <span class="black-text name">Banu Tri</span>
+      <span class="black-text email">banutriyantoko@gmail.com</span>
+    </div>
+  </li>
+    <li><a class="waves-effect hide-on-large-only" href="#!"><i class="material-icons left black-text">shopping_cart</i>Keranjang</a></li>
+    
+    <li><div class="divider hide-on-large-only"></div></li>
+    <li><a class="subheader">Personal</a></li>
+    <li><a class="waves-effect" href="#!"><i class="material-icons left black-text">admin_panel_settings</i>Akun Saya</a></li>
+    <li><a class="waves-effect" href="#!"><i class="material-icons left black-text">history</i>Riwayat Belanja</a></li>
+    <li><a class="waves-effect" href="#!"><i class="material-icons left black-text">logout</i>Keluar</a></li>
   </ul>
-
-
 
 
   <div class="section ">
@@ -171,12 +177,12 @@
   <div id="modalSearch" class="modal">
 
     <div class="modal-content" style="padding-top: 20px; padding-left: 20px; padding-right: 20px;">
-      <span class="black-text" style="font-size: 1.2rem;">Cari Barang</span>
+      <span class="black-text" style="font-size: 1.2rem;">Cari Barang <i class="material-icons">search</i></span>
       <a href="#!" class="black-text modal-close" style="float: right;"><i class="material-icons">close</i></a>
       <form action="#" id="searchBarForm">
         <div class="input-field ">
-          <i class="material-icons prefix">search</i>
-          <input id="icon_prefix" type="text" name="searchQuery" placeholder="Tulis nama barang...">
+          <input type="text"  name="searchQuery" placeholder="Tulis nama barang...">
+          <a href="#!" class=" black-text waves-effect waves-light right btn-submit-searchquery" style="margin-top: -40px;"><i class="material-icons" >send</i></a>
 
         </div>
       </form>

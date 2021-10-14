@@ -75,13 +75,14 @@ footer.page-footer {
 
 .btn-navbar-round { 
   border-radius: 100% !important;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 10% !important;
+  padding-right: 10% !important;
+  
 } 
 
 .nav-wrapper{
   padding-left: 15px;
-  padding-right: 0;
+  padding-right: 15px;
 }
 
 @media only screen and (min-width: 993px){
@@ -121,7 +122,3 @@ footer.page-footer {
   box-shadow: 0 1px 0 0 rgb(49, 49, 49) !important;
 }
 
-.vl{
-  border-left: 2px solid rgb(36, 36, 36);
-  
-}
