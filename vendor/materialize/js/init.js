@@ -68,7 +68,8 @@ $('.sidenav').sidenav();
 
 
 
-
+// Tooltip
+$('.tooltipped').tooltip();
 
 // Dropdown
 $(".dropdown-trigger").dropdown();
