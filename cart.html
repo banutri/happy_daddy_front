@@ -12,14 +12,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
 
-    <!-- CSS  -->
+    <!-- CSS  ALL-->
 
     <link href="/vendor/materialize/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="/vendor/materialize/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 
+    <!-- CSS Cart -->
+    <link rel="stylesheet" href="/assets/css/cart.css">
+
     <!-- Icon -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="/vendor/fontawesome-free/css/all.min.css">
+    
 
     <!-- Notification -->
     <link rel="stylesheet" href="/vendor/notification/css/notification.css">
@@ -47,19 +50,19 @@
 
                         <li>
                             <a href="#modalSearch"
-                                class="waves-effect waves-light btn-flat btn-navbar-round black-text modal-trigger">
+                                class="waves-effect waves-light btn yellow accent-3 btn-navbar-round black-text modal-trigger">
                                 <i class="material-icons">search</i>
                             </a>
                         </li>
                         <li>
-                            <a href="/cart.html" class=" btn-flat btn-navbar-round">
+                            <a href="/cart.html" class=" btn yellow accent-3 btn-navbar-round">
                                 <i class="material-icons black-text">shopping_cart</i>
                                 <span class="notification-count white-text">10</span>
                             </a>
                         </li>
                         <li>
                             <a href="#!"
-                                class="waves-effect waves-light btn-flat btn-navbar-round black-text sidenav-trigger-custom">
+                                class="waves-effect waves-light btn yellow accent-3 btn-navbar-round black-text sidenav-trigger-custom">
                                 <i class="material-icons">perm_identity</i>
                             </a>
                         </li>
@@ -69,16 +72,19 @@
                     <ul class="right hide-on-large-only">
                         <li>
                             <a href="#modalSearch"
-                                class="waves-effect waves-light btn-flat btn-navbar-round black-text modal-trigger">
+                                class="waves-effect waves-light btn yellow accent-3 btn-navbar-round black-text modal-trigger">
                                 <i class="material-icons">search</i>
                             </a>
                         </li>
                     </ul>
 
+                    <ul>
+                        <li>
+                            <a href="#"  class="hide-on-large-only waves-effect waves-light btn yellow accent-3 btn-navbar-round black-text sidenav-trigger-custom"><i class="material-icons">perm_identity</i></a>
+                        </li>
+                    </ul>
 
-
-                    <a href="#" data-target="nav-mobile" class=" sidenav-trigger-custom black-text hide-on-large-only"
-                        style="margin:0 18px; float:left;"><i class="material-icons">perm_identity</i></a>
+                    
                 </div>
             </nav>
 
@@ -119,33 +125,39 @@
     <!-- Content -->
     <main>
         <div class="container" style="padding-top: 20px;">
-            
-            
-            <div class="row">
-                <div class="col l12 m12 s12">
+
+
+            <div class="row items-cart" style="margin-bottom: 50px;">
+                <div class="col l12 m12 s12" style=" position: relative; width: 100%;">
                     <div class="card yellow accent-3">
                         <div class="card-content" style="padding:10px; position: relative; width: 100%;">
                             <h5 style="margin: 1px;">Keranjang</h5>
-                            <a href="#!" class="black-text tooltipped" style="position: absolute; right: 23px; bottom: 5px; " data-position="top" data-tooltip="Kosongkan Keranjang">
+                            <a href="#!" class="black-text tooltipped"
+                                style="position: absolute; right: 23px; bottom: 5px; " data-position="top"
+                                data-tooltip="Kosongkan Keranjang">
                                 <i class="material-icons " style="font-size:25px;">close</i>
                             </a>
                         </div>
                     </div>
+
                 </div>
+
                 <!-- Loop Cart -->
                 <div class="col s12 m12 l12">
                     <div class="card hoverable">
                         <div class="card-content">
-                            <div class="row" style="margin-bottom: 0;">
+
+                            <div class="row" style="margin-bottom: 0px;">
                                 <!-- cart left -->
                                 <div class="col s12 m12 l9">
                                     <div class="row" style="margin-bottom: 0;">
                                         <!-- cart image -->
                                         <div class="col s12 m5 l5">
                                             <div style="height: 150px;" class="grey lighten-5">
-                                                <div class="product-img" style="background-image: url('/assets/catalogues/hijab2.jpg');">
+                                                <div class="product-img"
+                                                    style="background-image: url('/assets/catalogues/hijab2.jpg');">
                                                 </div>
-                                              </div>
+                                            </div>
                                         </div>
 
                                         <!-- cart desc -->
@@ -161,7 +173,8 @@
                                                 </div>
                                             </strong>
                                             <div style="bottom: 0; position: absolute;">
-                                                <span style="font-size: 18px; text-decoration: line-through;">Rp 260,000</span>
+                                                <span style="font-size: 18px; text-decoration: line-through;">Rp
+                                                    260,000</span>
                                                 <span style="font-size: 18px; ">Rp 250,000</span>
                                             </div>
                                         </div>
@@ -169,56 +182,69 @@
                                 </div>
                                 <!-- cart right -->
                                 <!-- large display only -->
-                                <div class="col s12 m12 l3 hide-on-med-and-down" >
+                                <div class="col s12 m12 l3 hide-on-med-and-down">
                                     <div class="row" style="margin-bottom: 1px;">
-                                        <div class="col l10 m10 s10">
+                                        <div class="col l10 m9 s10">
                                             <div class="row">
                                                 <div class="col l12 m6 s6">
-                                                    <div class="input-field">
-                                                        <label for="">Jumlah</label>
-                                                        <input type="number" min="1" value="1">
+                                                    <div class="custom-number-input input-field">
+                                                        <button class="btn-flat white black-text waves-effect waves-dark btn-custom-number-input btn-minus" ><i class="material-icons">arrow_back_ios</i></button>
+                                                        <input type="number" class="qty-counter" min="1" value="1">
+                                                        <button class="btn-flat white black-text waves-effect waves-dark btn-custom-number-input btn-plus"><i class="material-icons">arrow_forward_ios</i></button>
                                                     </div>
                                                 </div>
                                                 <div class="col l12 m6 s6">
                                                     <label for="">Total</label>
-                                                    <input type="text" value="Rp.240,000" disabled>
+                                                    <input type="text" value="Rp.240,000" readonly>
                                                 </div>
                                             </div>
-                                            
-                                            
+
+
                                         </div>
-                                        <div class="col l2 m2 s2">
-                                            <a href="#!" class="waves-effect right tooltipped black-text" data-position="top" data-tooltip="Hapus barang ini" ><i class="material-icons right" style="font-size: 25px !important; margin-left: 0;">close</i> </a>
+                                        <div class="col l2 m3 s2">
+                                            <a href="#!" class="waves-effect right tooltipped black-text"
+                                                data-position="top" data-tooltip="Hapus barang ini"><i
+                                                    class="material-icons right"
+                                                    style="font-size: 25px !important; margin-left: 0;">close</i> </a>
                                         </div>
-                                        
-                                        
+
+
                                     </div>
-                                    
+
                                 </div>
                                 <!-- medium and small display -->
-                                <div class="col s12 m12 l3 hide-on-large-only" >
+                                <div class="col s12 m12 l3 hide-on-large-only">
                                     <div class="row" style="margin-bottom: 1px; height: 100%; position: relative;">
                                         <div class="col l10 m11 s10">
                                             <div class="row" style="margin-bottom: 1px; ">
                                                 <div class="col l12 m6 s6">
-                                                    <label for="">Jumlah</label>
-                                                    <input type="number" min="1" value="1">
+                                                    <div class="custom-number-input input-field">
+                                                        <button class="btn-flat white black-text waves-effect waves-dark btn-custom-number-input btn-minus" ><i class="material-icons">arrow_back_ios</i></button>
+                                                        <input type="number" class="qty-counter" min="1" value="1">
+                                                        <button class="btn-flat white black-text waves-effect waves-dark btn-custom-number-input btn-plus"><i class="material-icons">arrow_forward_ios</i></button>
+                                                    </div>
                                                 </div>
                                                 <div class="col l12 m6 s6">
-                                                    <label for="">Total</label>
-                                                    <input type="text" value="Rp.240,000" disabled>
+                                                    
+                                                        <label for="">Total</label>
+                                                        <input type="text" value="Rp.240,000" readonly>
+                                                    
+                                                    
                                                 </div>
                                             </div>
-                                            
-                                            
+
+
                                         </div>
-                                        <div class="col l2 m1 s2" style="position: absolute; bottom: 10px; right: 0;">
-                                            <a href="#!" class="waves-effect black-text right tooltipped" data-position="top" data-tooltip="Hapus barang ini" ><i class="material-icons right" style="font-size: 25px !important; margin-left: 0;">close</i> </a>
+                                        <div class="col l2 m1 s2" style="position: absolute; bottom: 20px; right: 0;">
+                                            <a href="#!" class="waves-effect black-text right tooltipped"
+                                                data-position="top" data-tooltip="Hapus barang ini"><i
+                                                    class="material-icons right"
+                                                    style="font-size: 25px !important; margin-left: 0;">close</i> </a>
                                         </div>
-                                        
-                                        
+
+
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -226,29 +252,76 @@
                     </div>
                 </div>
             </div>
-            
+
             <section>
                 <div class="row">
                     <div class="col l12 m12 s12">
                         <div class="card yellow accent-3">
                             <div class="card-content" style="padding:10px; ">
                                 <h5 style="margin: 1px;">Rincian</h5>
-                                
+
                             </div>
                         </div>
                     </div>
                     <div class="col l12 m12 s12">
                         <div class="card">
-                            <div class="card-content" style="padding:10px; ">
-                                <h5 style="margin: 1px;">Rincian</h5>
-                                
+                            <div class="card-content" style="padding-left:10px; padding-right: 10px; padding-bottom: 10px;">
+                                <table class="striped">
+                                    <tbody>
+                                        <tr>
+                                            <td>Jumlah Barang</td>
+                                            <td>: <span>5</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Total Berat (Kg)</td>
+                                            <td>: <span>2</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Total Harga Barang</td>
+                                            <td>: Rp <span>430,000</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Dikirim Kepada</td>
+                                            <td>: <span>Banu Triyantoko</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Alamat Tujuan</td>
+                                            <td>: <span>Jl. Mr. Wurjanto, Kp. Ngabean, RT 01 RW 04, Gunungpati, Semarang.
+                                                (Belakang Toko Selo Agung)</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Dikirim Dari</td>
+                                            <td>: <span>Jakarta Selatan</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Biaya Pengiriman</td>
+                                            <td>: Rp <span>20,000</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Total Biaya Keseluruhan</td>
+                                            <td>
+                                                : <span style="font-size: 4.5vh;" class="yellow accent-3 black-text">Rp 450,000</span>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+
+                            </div>
+                            <div class="card-action" style="height: 70px; padding: 10px;">
+                                <a href="#!" class="btn waves-effect waves-light black-text right white">
+                                    Bayar
+                                    <i class="material-icons right">
+                                        arrow_forward_ios
+                                    </i>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            
+
 
         </div>
     </main>
@@ -299,6 +372,9 @@
     <script src="vendor/jquery/jquery-3.6.0.min.js"></script>
     <script src="/vendor/materialize/js/materialize.js"></script>
     <script src="/vendor/materialize/js/init.js"></script>
+
+    <!-- Cart Script -->
+    <script src="/assets/js/cart.js"></script>
 
     <!-- Notification -->
     <script src="/vendor/notification/js/notification.js"></script>
