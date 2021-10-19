@@ -29,30 +29,8 @@ p {
   color: #26a69a;
 }
 
-.parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
-}
-  .parallax-container .section {
-    width: 100%;
-  }
-
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
-}
 
 @media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
 
   .nav-wrapper{
     padding-left: 1px !important;
@@ -93,19 +71,6 @@ footer.page-footer {
 .nav-wrapper{
   padding-left: 15px;
   padding-right: 15px;
-}
-
-@media only screen and (min-width: 993px){
-.container {
-    width: 80% !important; 
-}
-}
-
-.product-img{
-  height: 100%;
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center center;
 }
 
 .notification-count

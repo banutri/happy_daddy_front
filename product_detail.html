@@ -12,20 +12,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
 
-  <!-- CSS  ALL-->
-
+  <!-- CSS  Core-->
   <link href="/vendor/materialize/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <link href="/vendor/materialize/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="/assets/css/main.css" type="text/css" rel="stylesheet" media="screen,projection" />
 
-  <!-- CSS Cart -->
-  <link rel="stylesheet" href="/assets/css/cart.css">
+  <!-- CSS Product Detail -->
+  <link rel="stylesheet" href="/assets/css/product_detail.css">
 
   <!-- Icon -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-
-  <!-- Notification -->
-  <link rel="stylesheet" href="/vendor/notification/css/notification.css">
 
 
 </head>
@@ -36,10 +32,10 @@
   <header>
     <div class="navbar-fixed">
 
-      <nav class="yellow accent-3" role="navigation">
+      <nav class="black" role="navigation">
         <div class="nav-wrapper ">
 
-          <a id="logo-container" href="/" class="brand-logo black-text" style="font-family: 'Satisfy', cursive; ">
+          <a id="logo-container" href="/" class="brand-logo yellow-text" style="font-family: 'Satisfy', cursive; ">
             Happy Daddy
           </a>
 
@@ -129,29 +125,61 @@
       <div class="card">
         <div class="card-content">
           <div class="row">
-            <div class="col l5 m5 s12">
-              <div style=" height: 300px;" class="grey lighten-5">
-                <div class="product-img" style="background-image: url('/assets/catalogues/hijab2.jpg');">
+            <div class="col l6 m6 s12 ">
+              <!-- Product image -->
+              <div class="col l12 m12 s12">
+                <div style=" height: 450px;" class="grey lighten-5">
+                  <div class="product-img" style="background-image: url('/assets/catalogues/hijab2.jpg');">
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col l7 m7 s12" style="position: relative; height: 300px;">
-              <h5 class="" style="margin-top: 0px;">Hijab Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi suscipit nulla soluta</h5>
-              <strong>
-                <div class="" style="color: #696969;">
-                  <p>Detail</p>
-                  <small>Kode&nbsp;: <span>000878372532112</span></small>
-                  <br>
-                  <small>Berat&nbsp;: <span>0.5Kg</span></small>
-                  <br>
-                  <small>Stok&nbsp;&nbsp;: <span>100</span></small>
+              <!-- Small Product image -->
+              <div class="col l12 m12 s12">
+                <!-- outter small-images -->
+                <div class="small-images-outter-container valign-wrapper ">
+                  <a href="#!" id="left-btn" class="yellow small-images-scroll-btn black-text" ><i class="material-icons">arrow_back_ios</i></a href="#!"> 
+                  <div class="grey small-images-inner-container dragscroll">
+                      <div class="small-images-wrapper">
+
+
+                        <div class="small-images red "></div>
+                        <div class="small-images red "></div>
+                        <div class="small-images red "></div>
+                        <div class="small-images red "></div>
+                        <div class="small-images red "></div>
+                        <div class="small-images red "></div>
+                        <div class="small-images red "></div>
+                        <div class="small-images red "></div>
+                        <div class="small-images red "></div>
+                        <div class="small-images red "></div>
+                        <div class="small-images red "></div>
+                        <div class="small-images red "></div>
+                        <div class="small-images red "></div>
+                        <div class="small-images red "></div>
+                        <div class="small-images red "></div>
+                        <div class="small-images red "></div>
+                        <div class="small-images red "></div>
+                        <div class="small-images red "></div>
+
+
+                      </div>
+                  </div>
+                  <a href="#!" id="right-btn" class="yellow small-images-scroll-btn black-text" ><i class="material-icons">arrow_forward_ios</i></a> 
                 </div>
-              </strong>
-              
-              <div style="bottom: 0; position: absolute;">
-                <span style="font-size: 18px; text-decoration: line-through;">Rp
-                  260,000</span>
-                <span style="font-size: 18px; ">Rp 250,000</span>
+
+              </div>
+            </div>
+            <div class="col l6 m6 s12">
+              <!--  -->
+              <div>
+                <span class="product-name" style="margin-top: 0px;">Hijab Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                  suscipit nulla soluta</span>
+                
+  
+                <div class="price-container grey lighten-4">
+                  <p class="product-price-before">Rp 260,000</p>
+                  <p class="product-price-after">Rp 250,000</p>
+                </div>
               </div>
 
             </div>
@@ -206,13 +234,16 @@
   <!--  Scripts-->
   <script src="vendor/jquery/jquery-3.6.0.min.js"></script>
   <script src="/vendor/materialize/js/materialize.js"></script>
-  <script src="/vendor/materialize/js/init.js"></script>
+  <script src="/assets/js/main.js"></script>
 
-  <!-- Cart Script -->
+  <!-- Product Detail Script -->
   <script src="/assets/js/product_detail.js"></script>
 
+  <script src="/vendor/dragscroll/dragscroll.js"></script>
+
+
   <!-- Notification -->
-  <script src="/vendor/notification/js/notification.js"></script>
+
 
 </body>
 
