@@ -11,7 +11,7 @@
 
   @media only screen and (min-width: 993px){
     .container {
-        width: 95% !important; 
+        width: 90% !important; 
     }
 }
 
@@ -65,9 +65,10 @@ div.small-images:hover{
 }
 
 .product-name{
-    font-weight: 500 !important;
+    font-weight: 470 !important;
     font-size: 1.25rem;
     word-wrap: break-word;
+    margin-bottom: 20px !important;
 }
 
 div.price-container{
@@ -75,9 +76,12 @@ div.price-container{
     padding: 10px;
 }
 .product-price-before , .product-price-after{
-    font-size: 2rem; 
+    font-size: 2rem;
+    font-weight: 450 !important;
+    margin: 0px 5px; 
 }
 
 .product-price-before{
     text-decoration: line-through;
 }
+
