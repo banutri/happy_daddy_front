@@ -44,6 +44,7 @@ $('.tooltipped').tooltip();
 // Dropdown
 $(".dropdown-trigger").dropdown();
 
+
 // ========== End Init Functions ========= //
 
 });

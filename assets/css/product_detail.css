@@ -15,14 +15,14 @@
     }
 }
 
-.small-images-outter-container{
+.product-image-slider-outter-container{
     display: flex;
     width: 100%;
     padding: 5px;
     
 }
 
-.small-images-scroll-btn{
+.product-image-slider-scroll-btn{
     width: 70px;
     height: 90px;
     display: flex;
@@ -31,7 +31,7 @@
     
 }
 
-.small-images-inner-container{
+.product-image-slider-inner-container{
     cursor: grab;
     flex: 1;
     display: flex;
@@ -41,22 +41,22 @@
     
 }
 
-.small-images-inner-container::-webkit-scrollbar { display: none; }
+.product-image-slider-inner-container::-webkit-scrollbar { display: none; }
 
-div.small-images-wrapper {
+div.product-image-slider-wrapper {
     display: flex;
     min-height:50px;
     
 }
 
-div.small-images{
+div.product-image-slider{
     width: 80px;
     height: 80px;
     margin: 5px;
     
 }
 
-div.small-images:hover{
+div.product-image-slider:hover{
     
     margin: 5px;
     width: 80px;
@@ -71,7 +71,7 @@ div.small-images:hover{
     margin-bottom: 20px !important;
 }
 
-div.price-container{
+div.highlight-panel{
     width: 100%;
     padding: 10px;
 }
@@ -85,3 +85,12 @@ div.price-container{
     text-decoration: line-through;
 }
 
+.listLokasiItems{
+    width: 100%;
+    text-align: left;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.233) !important;
+}
+
+.listLokasiItems:hover{
+    background-color: rgba(0, 0, 0, 0.116) !important;
+}

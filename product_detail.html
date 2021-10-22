@@ -135,36 +135,36 @@
               </div>
               <!-- Small Product image -->
               <div class="col l12 m12 s12">
-                <!-- outter small-images -->
-                <div class="small-images-outter-container valign-wrapper ">
-                  <a href="#!" id="left-btn" class="yellow small-images-scroll-btn black-text" ><i class="material-icons">arrow_back_ios</i></a href="#!"> 
-                  <div class="grey small-images-inner-container dragscroll">
-                      <div class="small-images-wrapper">
+                <!-- outter product-image-slider -->
+                <div class="product-image-slider-outter-container valign-wrapper ">
+                  <a href="#!" id="left-btn" class="yellow product-image-slider-scroll-btn black-text" ><i class="material-icons">arrow_back_ios</i></a href="#!"> 
+                  <div class="grey product-image-slider-inner-container dragscroll">
+                      <div class="product-image-slider-wrapper">
 
 
-                        <div class="small-images red "></div>
-                        <div class="small-images red "></div>
-                        <div class="small-images red "></div>
-                        <div class="small-images red "></div>
-                        <div class="small-images red "></div>
-                        <div class="small-images red "></div>
-                        <div class="small-images red "></div>
-                        <div class="small-images red "></div>
-                        <div class="small-images red "></div>
-                        <div class="small-images red "></div>
-                        <div class="small-images red "></div>
-                        <div class="small-images red "></div>
-                        <div class="small-images red "></div>
-                        <div class="small-images red "></div>
-                        <div class="small-images red "></div>
-                        <div class="small-images red "></div>
-                        <div class="small-images red "></div>
-                        <div class="small-images red "></div>
+                        <div class="product-image-slider red "></div>
+                        <div class="product-image-slider red "></div>
+                        <div class="product-image-slider red "></div>
+                        <div class="product-image-slider red "></div>
+                        <div class="product-image-slider red "></div>
+                        <div class="product-image-slider red "></div>
+                        <div class="product-image-slider red "></div>
+                        <div class="product-image-slider red "></div>
+                        <div class="product-image-slider red "></div>
+                        <div class="product-image-slider red "></div>
+                        <div class="product-image-slider red "></div>
+                        <div class="product-image-slider red "></div>
+                        <div class="product-image-slider red "></div>
+                        <div class="product-image-slider red "></div>
+                        <div class="product-image-slider red "></div>
+                        <div class="product-image-slider red "></div>
+                        <div class="product-image-slider red "></div>
+                        <div class="product-image-slider red "></div>
 
 
                       </div>
                   </div>
-                  <a href="#!" id="right-btn" class="yellow small-images-scroll-btn black-text" ><i class="material-icons">arrow_forward_ios</i></a> 
+                  <a href="#!" id="right-btn" class="yellow product-image-slider-scroll-btn black-text" ><i class="material-icons">arrow_forward_ios</i></a> 
                 </div>
 
               </div>
@@ -176,7 +176,7 @@
                     suscipit nulla soluta</p>
                 </div>
                 <div class="col l12">
-                  <div class="price-container grey lighten-5">
+                  <div class="highlight-panel grey lighten-5">
                     <span class="product-price-before">Rp260,000</span>
                     <span class="product-price-after">Rp250,000</span>
                   </div>
@@ -185,17 +185,36 @@
                 <div class="col l12 m12">
                   <div class="card" >
                     <div class="card-content" style="padding: 15px;">
-                      <div class="row" style="margin-bottom: 10px;">
-                        <div class="col">
-                          <h5>Pengiriman</h5>
+                      <div class="highlight-panel grey lighten-5">
+                        <div class="row" style="margin-bottom: 10px;">
+                          <div class="col">
+                            
+                              <h6 style="font-weight: 500;">Pengiriman</h6>
+                            
+                          </div>
+                          <div class="col l2" style="padding-top: 10px; padding-left: 0px;">
+                            <i class="material-icons">local_shipping</i>
+                          </div>
+      
                         </div>
-                        <div class="col l2" style="padding-top: 15px;">
-                          <i class="material-icons small">local_shipping</i>
-                        </div>
-    
                       </div>
+                      
                       <div class="row">
                         <div class="col l12 m12">
+                          <p>Berat <span>500gr</span></p>
+                        </div>
+                        <div class="col l12 m12">
+                          <div class="row valign-wrapper">
+                            <div class="col l3 m6">
+                              <span>Dikirim ke</span>
+                            </div>
+                            <div class="col l9 m6 ">
+                              <a href="#!" data-target="modalPilihLokasi" class="btn-flat btn-small white waves-effect waves-dark black-text right modal-trigger" style="text-transform: none !important;">Pilih Lokasi <i class="material-icons right">
+                                expand_more
+                                </i></a>
+                            </div>
+                          </div>
+                          
                           
                         </div>
                       </div>
@@ -256,9 +275,30 @@
 
   </div>
 
+  <!-- Modal Pilih Lokasi -->
+   <div id="modalPilihLokasi" class="modal">
+     <div class="modal-content">
+       <div class="row" style="margin-bottom: 1px;">
+         <div class="col l12 m12 s12">
+          <h5>Masukan Tujuan Pengiriman</h5>
+          <div class="input-field">
+            <label for="">Kota / Kecamatan</label>
+            <input type="text" class="inputLokasi">
+          </div>
+         </div>
+         <div class="col l12 m12 s12 listLokasi">
+          
+          
+         </div>
+       </div>
+       
+     </div>
+     
+   </div>
+
   <!--  Scripts-->
   <script src="vendor/jquery/jquery-3.6.0.min.js"></script>
-  <script src="/vendor/materialize/js/materialize.js"></script>
+  <script src="/vendor/materialize/js/materialize.min.js"></script>
   <script src="/assets/js/main.js"></script>
 
   <!-- Product Detail Script -->
