@@ -1,0 +1,3 @@
+di halaman detail barang, menu cek ongkir, tampilan harus bisa terlihat rapih di berbagai device
+
+masih sampe product image slider

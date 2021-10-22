@@ -51,7 +51,7 @@ $(document).ready(function () {
                     $('.listLokasi').html('');
                     $.each(response, function (i, v) { 
                          $('.listLokasi').append(`
-                         <a href="#!" class="btn-flat white black-text waves-effect waves-dark listLokasiItems" data-destination-code="`+v.destination_code+`">`+v.subdistrict+`, `+v.city+`, `+v.province+`<i class="material-icons right">arrow_forward_ios</i> </a>
+                         <a href="#!" class="btn-flat white black-text waves-effect waves-dark listLokasiItems" data-destination-code="`+v.destination_code+`" data-destination-plain="`+v.subdistrict+`, `+v.city+`, `+v.province+`">`+v.subdistrict+`, `+v.city+`, `+v.province+`<i class="material-icons right">arrow_forward_ios</i> </a>
                          `);
                     });
                 }
@@ -66,15 +66,15 @@ $(document).ready(function () {
     // Onclick listLokasiItems
     $('.listLokasi').on('click','.listLokasiItems',function(){
         let destination_code = $(this).data('destination-code');
-
-        // parameter request ongkir
+        let destination_plain = $(this).data('destination-plain');
+        // parameter request ongkir not yet done
         data = {
             origin:"CGK",
             destination:destination_code,
             weight:0.5,
-            p:20,
+            p:10,
             l:10,
-            t:10,
+            t:2,
         }
         
         // request ongkir
@@ -84,10 +84,28 @@ $(document).ready(function () {
             data: data,
             dataType: "JSON",
             success: function (response) {
-                console.log(response);
+                response = response.sicepat.results;
+                // console.log(response);
+
+                $('.tariffList').html('');
+                $.each(response, function (i, v) { 
+                     $('.tariffList').append(`
+                        <tr>
+                            <td>`+v.service+`</td>
+                            <td>`+v.description+`</td>
+                            <td>`+v.etd+`</td>
+                            <td>`+v.tariff+`</td>
+                        </tr>
+                     `);
+                });
+
                 $('#modalPilihLokasi').modal('close');
+                $('.btn-pilihLokasi').html(``+destination_plain+` <i class="material-icons right">expand_more</i>`);
+                $('.panel-ongkir').show();
             }
         });
+
+        
    
     })
 
@@ -110,23 +128,3 @@ $(document).ready(function () {
 
 
 
-// API get tariff ongkir
-function get_tariff_ongkir(data){
-    data = {
-        origin:"CGK",
-        destination:"SRG21602",
-        weight:0.5,
-        p:20,
-        l:10,
-        t:10,
-    }
-    $.ajax({
-        type: "post",
-        url: "https://content-main-api-production.sicepat.com/public/delivery-fee/fare-non-international",
-        data: data,
-        dataType: "JSON",
-        success: function (response) {
-            console.log(response);
-        }
-    });
-}
