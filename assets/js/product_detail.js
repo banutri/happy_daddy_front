@@ -51,7 +51,7 @@ $(document).ready(function () {
                     $('.listLokasi').html('');
                     $.each(response, function (i, v) { 
                          $('.listLokasi').append(`
-                         <a href="#!" class="btn-flat white black-text waves-effect waves-dark listLokasiItems" data-destination-code="`+v.destination_code+`" data-destination-plain="`+v.subdistrict+`, `+v.city+`, `+v.province+`">`+v.subdistrict+`, `+v.city+`, `+v.province+`<i class="material-icons right">arrow_forward_ios</i> </a>
+                         <a href="#!" class="btn-flat white black-text waves-effect waves-dark listLokasiItems" data-destination-code="`+v.destination_code+`" data-destination-plain=" `+v.city+`, `+v.subdistrict+`">`+v.subdistrict+`, `+v.city+`, `+v.province+`<i class="material-icons right">arrow_forward_ios</i> </a>
                          `);
                     });
                 }
@@ -85,19 +85,21 @@ $(document).ready(function () {
             dataType: "JSON",
             success: function (response) {
                 response = response.sicepat.results;
-                // console.log(response);
+                console.log(response);
+
+                let indexService;
+                $.each(response, function (i, v) { 
+                     if(v.service === "REG"){
+                         indexService = i;
+                     }
+                });
 
                 $('.tariffList').html('');
-                $.each(response, function (i, v) { 
-                     $('.tariffList').append(`
-                        <tr>
-                            <td>`+v.service+`</td>
-                            <td>`+v.description+`</td>
-                            <td>`+v.etd+`</td>
-                            <td>`+v.tariff+`</td>
-                        </tr>
+                $('.tariffList').html(`
+                        <span style="font-weight: 500;">Rp `+number_comma(response[indexService].tariff)+`</span>
+                        <span>| SiCepat Reguler (`+response[indexService].service+`)</span>
+                        <span>(`+response[indexService].etd+`)</span>
                      `);
-                });
 
                 $('#modalPilihLokasi').modal('close');
                 $('.btn-pilihLokasi').html(``+destination_plain+` <i class="material-icons right">expand_more</i>`);
@@ -126,5 +128,7 @@ $(document).ready(function () {
 });
 
 
-
+function number_comma(number){
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
 

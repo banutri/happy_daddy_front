@@ -16,6 +16,7 @@
 }
 
 .product-image-slider-outter-container{
+    background-color: rgba(0, 0, 0, 0);
     display: flex;
     width: 100%;
     padding: 5px;
@@ -23,6 +24,7 @@
 }
 
 .product-image-slider-scroll-btn{
+    background-color: rgba(0, 0, 0, 0);
     width: 70px;
     height: 90px;
     display: flex;
@@ -36,7 +38,7 @@
     flex: 1;
     display: flex;
     overflow-x: scroll;
-    
+    background-color: rgba(0, 0, 0, 0);
     margin: 15px -5px;
     -ms-overflow-style: none;
     
@@ -68,10 +70,14 @@ div.product-image-slider:hover{
 }
 
 .product-name{
-    font-weight: 470 !important;
+    font-weight: 500 !important;
     font-size: 1.25rem;
     word-wrap: break-word;
-    margin-bottom: 20px !important;
+    /* margin-bottom: 20px !important; */
+}
+
+.stock-status{
+    font-weight: 500 !important;
 }
 
 div.highlight-panel{
