@@ -51,7 +51,7 @@ $(document).ready(function () {
                     $('.listLokasi').html('');
                     $.each(response, function (i, v) { 
                          $('.listLokasi').append(`
-                         <a href="#!" class="btn-flat white black-text waves-effect waves-dark listLokasiItems" data-destination-code="`+v.destination_code+`" data-destination-plain=" `+v.city+`, `+v.subdistrict+`">`+v.subdistrict+`, `+v.city+`, `+v.province+`<i class="material-icons right">arrow_forward_ios</i> </a>
+                         <a href="#!" class="btn-flat white black-text waves-effect waves-dark listLokasiItems" data-destination-code="`+v.destination_code+`" data-destination-plain="`+v.subdistrict+`, `+v.city+`">`+v.subdistrict+`, `+v.city+`, `+v.province+`<i class="material-icons right">arrow_forward_ios</i> </a>
                          `);
                     });
                 }
@@ -125,6 +125,16 @@ $(document).ready(function () {
     });
     
 
+});
+
+$(document).ready(function () {
+    $('.product-image-slider-wrapper').on('click','.product-image-slider',function(){
+        // get url image
+        let url_image = $(this).css(['background-image'])['background-image'].replace(/^url\(['"](.+)['"]\)/, '$1');
+
+        $('.product-img').css("background-image","url('"+url_image+"')");
+        console.log(url_image);
+    });
 });
 
 // QTY

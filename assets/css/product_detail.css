@@ -50,6 +50,8 @@ div.product-image-slider-wrapper {
     display: flex;
     min-height:50px;
     
+    justify-content: center;
+    
 }
 
 div.product-image-slider{
@@ -85,8 +87,8 @@ div.highlight-panel{
     padding: 10px;
 }
 .product-price-before , .product-price-after{
-    font-size: 2rem;
-    font-weight: 450 !important;
+    font-size: 1.5rem;
+    font-weight: 500 !important;
     margin: 0px 5px; 
 }
 
@@ -143,5 +145,9 @@ div.highlight-panel{
 
 .btn-masukkan-keranjang, .btn-beli-sekarang{
     font-size: 14px !important; text-transform: capitalize !important;
+    margin-right: 10px !important;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
     
 }

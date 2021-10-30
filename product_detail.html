@@ -125,7 +125,8 @@
       <div class="card">
         <div class="card-content">
           <div class="row">
-            <div class="col l5 m6 s12 ">
+            <!-- Product Image Panel LEFT -->
+            <div class="col l6 m12 s12 " style="margin-bottom: 20px;">
               <!-- Product image -->
               <div class="col l12 m12 s12">
                 <div style=" height: 450px;" class="grey lighten-5">
@@ -134,7 +135,7 @@
                 </div>
               </div>
               <!-- Small Product image -->
-              <div class="col l12 m12 s12">
+              <div class="col l12 m12 s12 hide-on-small-only">
                 <!-- outter product-image-slider -->
                 <div class="product-image-slider-outter-container valign-wrapper ">
                   <a href="#!" id="left-btn"
@@ -142,25 +143,9 @@
                       class="material-icons">arrow_back_ios</i></a href="#!">
                   <div class="product-image-slider-inner-container dragscroll">
                     <div class="product-image-slider-wrapper">
-
-
-                      <div class="product-image-slider "
-                        style="background-image: url('/assets/catalogues/hijab1.jpeg');"></div>
-                      <div class="product-image-slider "
-                        style="background-image: url('/assets/catalogues/hijab2.jpg');"></div>
-                      <div class="product-image-slider "
-                        style="background-image: url('/assets/catalogues/hijab3.jpg');"></div>
-                      <div class="product-image-slider "
-                        style="background-image: url('/assets/catalogues/hijab2.jpg');"></div>
-                      <div class="product-image-slider "
-                        style="background-image: url('/assets/catalogues/hijab1.jpeg');"></div>
-                      <div class="product-image-slider "
-                        style="background-image: url('/assets/catalogues/hijab3.jpg');"></div>
-
-
-
-
-
+                      <div class="product-image-slider" style="background-image: url('/assets/catalogues/hijab1.jpeg');"></div>
+                      <div class="product-image-slider" style="background-image: url('/assets/catalogues/hijab2.jpg');"></div>
+                      <div class="product-image-slider" style="background-image: url('/assets/catalogues/hijab3.jpg');"></div>
                     </div>
                   </div>
                   <a href="#!" id="right-btn"
@@ -170,20 +155,24 @@
 
               </div>
             </div>
-            <div class="col l7 m6 s12">
+            <!-- product detail and so on RIGHT -->
+            <div class="col l6 m12 s12">
               <div class="row">
-                <div class="col l12" style="margin-bottom: 20px;">
+                <!-- Product Name and stock status -->
+                <div class="col l12 m12 s12" style="margin-bottom: 20px;">
                   <p class="product-name">Hijab gatau ini namanya</p>
                   <span class="stock-status green-text">Stok Tersedia</span>
                 </div>
-                <div class="col l12" style="margin-bottom: 10px;">
+                <!-- Product Price -->
+                <div class="col l12 m12 s12" style="margin-bottom: 10px;">
                   <div class="highlight-panel grey lighten-5">
                     <span class="product-price-before">Rp260,000</span>
                     <span class="product-price-after">Rp250,000</span>
                   </div>
                 </div>
 
-                <div class="col l12 m12">
+                <!-- Product Ongkir -->
+                <div class="col l12 m12 s12">
 
                   <div class="highlight-panel grey lighten-5" style="margin-bottom: 10px;">
                     <div class="row" style="margin-bottom: 10px;">
@@ -199,16 +188,12 @@
                     </div>
                     <div style="width: 100%;">
                       <div class="row">
-
-                        <div class="col l12 m12">
-
-                        </div>
-                        <div class="col l12 m12">
+                        <div class="col l12 m12 hide-on-small-only">
                           <div class="row valign-wrapper" style="margin-bottom: 1px;">
-                            <div class="col l3 m12">
+                            <div class="col l3 m12 s12">
                               <span>Dikirim ke</span>
                             </div>
-                            <div class="col l9 m12 ">
+                            <div class="col l9 m12 s12">
                               <a href="#!" data-target="modalPilihLokasi"
                                 class="btn-flat btn-small white waves-effect waves-dark black-text right modal-trigger btn-pilihLokasi"
                                 style="text-transform: none !important; font-weight: 500; font-size: 14px;">Pilih Lokasi
@@ -225,9 +210,29 @@
                               </div>
                             </div>
                           </div>
-
-
-
+                        </div>
+                        <div class="col l12 m12 s12 show-on-small hide-on-med-and-up">
+                          <div class="row " style="margin-bottom: 1px;">
+                            <div class="col l3 m12 s12">
+                              <span>Dikirim ke</span>
+                            </div>
+                            <div class="col l9 m12 s12">
+                              <a href="#!" data-target="modalPilihLokasi"
+                                class="btn-flat btn-small white waves-effect waves-dark black-text modal-trigger btn-pilihLokasi"
+                                style="text-transform: none !important; font-weight: 500; font-size: 14px;">Pilih Lokasi
+                                <i class="material-icons right">
+                                  expand_more
+                                </i></a>
+                            </div>
+                          </div>
+                          <div class="panel-ongkir" style="display: none;">
+                            <div class="row">
+                              <div class="col l12 m12">
+                                <p>Perkiraan Ongkos Kirim :</p>
+                                <div class="tariffList"></div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -235,13 +240,12 @@
 
 
                 </div>
-                <div class="col l12 m12">
-
+                <!-- Product QTY and add to cart btn, beli sekarang btn -->
+                <div class="col l12 m12 s12">
                   <div class="highlight-panel grey lighten-5" style="margin-bottom:10px;">
-                    <div class="row  valign-wrapper">
-                      <div class="col l5">
-
-                        <div class="custom-number-input input-field valign-wrapper">
+                    <div class="row">
+                      <div class="col l12 m12 s12">
+                        <div class="custom-number-input input-field valign-wrapper" style="justify-content: space-between;">
                           <p style="margin-right: 10px;">Jumlah : </p>
                           <div style="width: 150px; display: flex;" class="qty-counter-items">
                             <button
@@ -255,11 +259,14 @@
 
                         </div>
                       </div>
-                      <div class="col l7">
-                        <div class="" style="padding: 5px;">
+                      <div class="col l12 m12 s12">
+                        <div class="hide-on-small-only">
                           <button class="btn waves-effect waves-dark yellow black-text btn-masukkan-keranjang"> <i class="material-icons black-text left">add_shopping_cart</i>Masukkan Keranjang</button>
                           <button class="btn waves-effect waves-dark yellow accent-3 black-text btn-beli-sekarang" >Beli Sekarang</button>
-
+                        </div>
+                        <div class="show-on-small hide-on-med-and-up">
+                          <button class="btn waves-effect waves-dark yellow black-text btn-masukkan-keranjang" style="width: 100%; "> <i class="material-icons black-text left">add_shopping_cart</i>Masukkan Keranjang</button>
+                          <button class="btn waves-effect waves-dark yellow accent-3 black-text btn-beli-sekarang" style="width: 100%; ">Beli Sekarang</button>
                         </div>
                       </div>
                     </div>
@@ -276,6 +283,7 @@
         </div>
       </div>
 
+      <!-- Product Description -->
       <div class="card">
         <div class="card-content">
           <div class="highlight-panel grey lighten-5">
