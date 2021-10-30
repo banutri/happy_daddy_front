@@ -127,6 +127,50 @@ $(document).ready(function () {
 
 });
 
+// QTY
+$(document).ready(function () {
+    
+    // btn-minus on click
+    $('.qty-counter-items').on('click','.btn-minus',function(){
+        console.log('isssslih\n');
+        let qtyElement = $(this).siblings('.qty-counter');
+        qty_counter(qtyElement,"minus");
+    });
+
+    // btn-plus on click
+    $('.qty-counter-items').on('click','.btn-plus',function(){
+        console.log('isssslih\n');
+        let qtyElement = $(this).siblings('.qty-counter');
+        qty_counter(qtyElement,"plus");
+    })
+
+});
+
+// QTY Counter increment
+function qty_counter(instance,typeCounter){
+    let qtyVal = parseInt(instance.val());
+
+    if(typeCounter==="minus"){
+        if(qtyVal<=1)
+        {
+            instance.val(1);
+        }
+        else if(qtyVal>1)
+        {
+            instance.val(qtyVal-1);
+        }
+    }
+
+    else if(typeCounter==="plus")
+    {
+        instance.val(qtyVal+1);
+    }
+    
+}
+
+
+
+
 
 function number_comma(number){
     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");

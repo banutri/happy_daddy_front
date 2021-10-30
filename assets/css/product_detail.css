@@ -103,3 +103,45 @@ div.highlight-panel{
 .listLokasiItems:hover{
     background-color: rgba(0, 0, 0, 0.116) !important;
 }
+
+/* QTY */
+
+.custom-number-input{
+    display: flex;
+    
+
+    
+}
+
+.btn-custom-number-input{
+    padding: 0px 5px !important;
+}
+
+
+.input-field input[type="number"] {
+    margin: 0;
+    text-align: center;
+    border:none !important;
+    box-shadow: none !important;
+    }
+    
+    .input-field input[type=number]:focus {
+        border: none !important;
+        box-shadow: none !important;
+    }
+    
+    input[type="number"] {
+        -webkit-appearance: textfield !important;
+        -moz-appearance: textfield !important;
+        appearance: textfield !important;
+        }
+      
+      input[type=number]::-webkit-inner-spin-button,
+      input[type=number]::-webkit-outer-spin-button {
+          -webkit-appearance: none;
+        }
+
+.btn-masukkan-keranjang, .btn-beli-sekarang{
+    font-size: 14px !important; text-transform: capitalize !important;
+    
+}
