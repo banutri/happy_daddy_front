@@ -6,9 +6,9 @@
   }
 
   
-@media only screen and (min-width: 993px){
-  .container {
-      width: 80% !important; 
-  }
-  }
+.home-banner{
+  width: 100%;
+  height: auto;
+}
+
   
