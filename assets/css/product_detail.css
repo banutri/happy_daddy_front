@@ -1,3 +1,17 @@
+.breadcrumb{
+    color: black !important;
+}
+.breadcrumb:before{
+    color: black !important;
+}
+
+.breadcrumb:last-child{
+    color: rgba(0, 0, 0, 0.644) !important;
+}
+
+
+
+
 .product-img{
     height: 100%;
       background-repeat: no-repeat;
